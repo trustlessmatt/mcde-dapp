@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: pixel;
+  src: url("/fonts/PixelOperator.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: pixel-bold;
+  src: url("/fonts/PixelOperator-Bold.ttf") format("truetype");
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth text-tertiary font-primary;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  @apply text-tertiary font-primaryBold text-[32px];
+}

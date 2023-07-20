@@ -13,7 +13,11 @@ module.exports = {
         tertiary: "#000000",
         border: "#D9D9D9",
         "custom-red": "#DA0048",
-        "custom-blue": "#0048DA",
+        "custom-blue": "#3F7CF5",
+      },
+      fontFamily: {
+        primary: ["pixel", "-apple-system", "system-ui", "monospace"],
+        primaryBold: ["pixel-bold", "-apple-system", "system-ui", "monospace"],
       },
     },
   },
