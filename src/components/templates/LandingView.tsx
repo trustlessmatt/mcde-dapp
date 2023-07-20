@@ -14,14 +14,14 @@ const LandingView: FC = () => {
           alt="fries logo"
         />
         <div className="flex items-center gap-2">
-          <p className="text-2xl text-tertiary">The original</p>
+          <p className="text-3xl text-tertiary">The original</p>
           <Image
             src="/images/degods_text.png"
             width={86}
             height={20}
             alt="degods text"
           />
-          <p className="text-2xl text-tertiary">sub-community.</p>
+          <p className="text-3xl text-tertiary">sub-community.</p>
         </div>
       </div>
     </div>

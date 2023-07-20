@@ -12,10 +12,10 @@ const Nav: FC = () => {
         alt="fries logo"
       />
       <div className="flex items-center gap-5">
-        <p className="text-2xl">About</p>
-        <p className="text-2xl">Staking</p>
-        <p className="text-2xl">Merch</p>
-        <p className="text-2xl">Giveaways</p>
+        <p>About</p>
+        <p>Staking</p>
+        <p>Merch</p>
+        <p>Giveaways</p>
       </div>
       <div className="flex items-center gap-3">
         <Twitter className="w-5" />
