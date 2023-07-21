@@ -7,7 +7,7 @@ const Twitter: FC<TwitterProps> = ({ ...componentProps }: TwitterProps) => (
     href="https://twitter.com/degenpicksXYZ"
     target="_blank"
     rel="noreferrer"
-    className="py-2 pr-2 md:p-2 hover:opacity-50"
+    className="py-2 pr-2 md:p-2 hover:opacity-70"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

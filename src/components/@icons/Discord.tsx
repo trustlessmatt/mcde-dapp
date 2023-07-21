@@ -7,7 +7,7 @@ const Discord: FC<DiscordProps> = ({ ...componentProps }: DiscordProps) => (
     href="https://discord.gg/TGTam7epH6"
     target="_blank"
     rel="noreferrer"
-    className="py-2 pr-2 md:p-2"
+    className="py-2 pr-2 md:p-2 hover:opacity-70"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
