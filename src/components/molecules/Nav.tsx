@@ -16,7 +16,10 @@ const Nav: FC = () => {
   };
 
   return (
-    <div className="h-20 w-[90%] mx-auto flex items-center justify-between border-b border-border">
+    <div
+      className="h-20 w-[90%] mx-auto flex items-center 
+      justify-between border-b border-light-border"
+    >
       <Image
         src="/images/fries_logo.png"
         width={40}

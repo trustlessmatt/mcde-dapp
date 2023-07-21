@@ -11,9 +11,11 @@ module.exports = {
         primary: "#FFFFFF",
         secondary: "#F4F6FE",
         tertiary: "#000000",
-        border: "#D9D9D9",
+        "light-border": "#D9D9D9",
+        "dark-border": "#616161",
         "custom-red": "#DA0048",
         "custom-blue": "#3F7CF5",
+        "custom-black": "#1B1B1B",
       },
       fontFamily: {
         primary: ["pixel", "-apple-system", "system-ui", "monospace"],

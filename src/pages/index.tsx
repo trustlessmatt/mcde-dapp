@@ -1,4 +1,4 @@
-import { AboutView, LandingView, MembersView } from "@/components";
+import { AboutView, Footer, LandingView, MembersView } from "@/components";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <LandingView />
       <AboutView />
       <MembersView />
+      <Footer />
     </div>
   );
 }
