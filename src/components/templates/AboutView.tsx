@@ -7,8 +7,11 @@ const AboutView: FC = () => {
     <div className="bg-secondary w-full py-40">
       <div className="w-full h-full md:max-w-[1800px] md:mx-auto flex flex-col lg:flex-row items-center justify-evenly gap-5">
         <TLDR />
-        <div className="relative flex items-center gap-5 mt-32 lg:mt-0">
-          <div className="absolute -top-20 right-0">
+        <div className="lg:hidden pt-12 pb-6">
+          <SeasonSelector season={season} setSeason={setSeason} />
+        </div>
+        <div className="relative flex items-center gap-5">
+          <div className="hidden lg:block absolute -top-20 right-0">
             <SeasonSelector season={season} setSeason={setSeason} />
           </div>
           <TraitCard
