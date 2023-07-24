@@ -5,9 +5,9 @@ const AboutView: FC = () => {
   const [season, setSeason] = useState<1 | 2>(2);
   return (
     <div className="bg-secondary w-full py-40">
-      <div className="w-full h-full md:max-w-[1800px] md:mx-auto flex flex-col lg:flex-row items-center justify-evenly gap-5 overflow-x-hidden">
+      <div className="w-full h-full md:max-w-[1800px] md:mx-auto flex flex-col lg:flex-row items-center justify-evenly gap-5">
         <TLDR />
-        <div className="relative flex items-center gap-5 mt-32 md:mt-0 overflow-x-auto">
+        <div className="relative flex items-center gap-5 mt-32 lg:mt-0">
           <div className="absolute -top-20 right-0">
             <SeasonSelector season={season} setSeason={setSeason} />
           </div>
