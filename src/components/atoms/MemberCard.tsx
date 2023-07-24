@@ -34,9 +34,8 @@ const MemberCard: FC<Props> = ({ image1, image2, twitterHandle, season }) => {
               <Image
                 src={image1}
                 fill
-                objectFit="cover"
                 alt="Mickey DeGods member season 1"
-                className="hover:scale-105 ease-in-out duration-300 transform"
+                className="hover:scale-105 ease-in-out duration-300 transform object-cover"
               />
             </motion.div>
           )}
@@ -51,9 +50,8 @@ const MemberCard: FC<Props> = ({ image1, image2, twitterHandle, season }) => {
               <Image
                 src={image2}
                 fill
-                objectFit="cover"
                 alt="Mickey DeGods member season 2"
-                className="hover:scale-105 ease-in-out duration-300 transform"
+                className="hover:scale-105 ease-in-out duration-300 transform object-cover"
               />
             </motion.div>
           )}
