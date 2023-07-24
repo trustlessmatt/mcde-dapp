@@ -1,7 +1,9 @@
 import {
   AboutView,
   Footer,
+  GradientTransition,
   LandingView,
+  LinksView,
   MembersView,
   MenuView,
 } from "@/components";
@@ -13,6 +15,8 @@ export default function Home() {
       <AboutView />
       <MembersView />
       <MenuView />
+      <LinksView />
+      <GradientTransition />
       <Footer />
     </div>
   );

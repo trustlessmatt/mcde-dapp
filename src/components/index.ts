@@ -9,6 +9,7 @@ const TwitterFooter = dynamic(() => import("./@icons/TwitterFooter"));
 
 // atoms
 const Button = dynamic(() => import("./atoms/Button"));
+const GradientTransition = dynamic(() => import("./atoms/GradientTransition"));
 const MemberCard = dynamic(() => import("./atoms/MemberCard"));
 const MovingText = dynamic(() => import("./atoms/MovingText"));
 const SeasonSelector = dynamic(() => import("./atoms/SeasonSelector"));
@@ -17,6 +18,7 @@ const TraitCard = dynamic(() => import("./atoms/TraitCard"));
 
 // molecules
 const Footer = dynamic(() => import("./molecules/Footer"));
+const LinkItem = dynamic(() => import("./molecules/LinkItem"));
 const MEButton = dynamic(() => import("./molecules/MEButton"));
 const MenuItem = dynamic(() => import("./molecules/MenuItem"));
 const Nav = dynamic(() => import("./molecules/Nav"));
@@ -29,6 +31,7 @@ const StakeCTA = dynamic(() => import("./organisms/StakeCTA"));
 // templates
 const AboutView = dynamic(() => import("./templates/AboutView"));
 const LandingView = dynamic(() => import("./templates/LandingView"));
+const LinksView = dynamic(() => import("./templates/LinksView"));
 const MembersView = dynamic(() => import("./templates/MembersView"));
 const MenuView = dynamic(() => import("./templates/MenuView"));
 
@@ -41,6 +44,7 @@ export {
   TwitterFooter,
   // atoms
   Button,
+  GradientTransition,
   MemberCard,
   MovingText,
   SeasonSelector,
@@ -48,6 +52,7 @@ export {
   TraitCard,
   // molecules
   Footer,
+  LinkItem,
   MEButton,
   MenuItem,
   Nav,
@@ -58,6 +63,7 @@ export {
   // templates
   AboutView,
   LandingView,
+  LinksView,
   MembersView,
   MenuView,
 };
