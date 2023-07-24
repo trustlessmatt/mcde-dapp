@@ -10,11 +10,11 @@ const MenuItem: FC<MenuItem> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col gap-2 border border-tertiary pb-5 ${
-        topPadding && "pt-5"
+      className={`w-[175px] flex flex-col gap-2 items-center border border-tertiary pb-2 md:pb-5 ${
+        topPadding && "pt-2 md:pt-5"
       }`}
     >
-      <Image src={image} width={173} height={100} alt={name} />
+      <Image src={image} width={175} height={100} alt={name} />
       <div>
         <p className="text-center font-primaryBold text-lg">{name}</p>
         <p className="text-center">{description}</p>

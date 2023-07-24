@@ -24,7 +24,7 @@ const Partner: FC<Props> = ({ image, name, link, width = null }) => {
         alt={name}
         className="overflow-hidden rounded-full"
       />
-      <p className="text-2xl text-primary text-center">{name}</p>
+      <p className="text-lg md:text-2xl text-primary text-center">{name}</p>
     </motion.a>
   );
 };
