@@ -22,6 +22,7 @@ const LinkItem = dynamic(() => import("./molecules/LinkItem"));
 const MEButton = dynamic(() => import("./molecules/MEButton"));
 const MenuItem = dynamic(() => import("./molecules/MenuItem"));
 const Nav = dynamic(() => import("./molecules/Nav"));
+const PageHead = dynamic(() => import("./molecules/PageHead"));
 const Partner = dynamic(() => import("./molecules/Partner"));
 
 // organisms
@@ -60,6 +61,7 @@ export {
   MEButton,
   MenuItem,
   Nav,
+  PageHead,
   Partner,
   // organisms
   Members,
