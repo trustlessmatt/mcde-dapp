@@ -32,6 +32,7 @@ const StakeCTA = dynamic(() => import("./organisms/StakeCTA"));
 
 // templates
 const AboutView = dynamic(() => import("./templates/AboutView"));
+const CollabsView = dynamic(() => import("./templates/CollabsView"));
 const LandingView = dynamic(() => import("./templates/LandingView"));
 const LinksView = dynamic(() => import("./templates/LinksView"));
 const MembersView = dynamic(() => import("./templates/MembersView"));
@@ -67,6 +68,7 @@ export {
   StakeCTA,
   // templates
   AboutView,
+  CollabsView,
   LandingView,
   LinksView,
   MembersView,
