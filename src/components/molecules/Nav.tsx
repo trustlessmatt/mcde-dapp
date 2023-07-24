@@ -2,7 +2,6 @@ import Image from "next/image";
 import { FC } from "react";
 import { Discord, Twitter } from "@/components";
 import { useRouter } from "next/router";
-import path from "path";
 import { motion } from "framer-motion";
 import { smallClickAnimation } from "@/constants/framer.config";
 

@@ -17,8 +17,16 @@ const LinksView: FC = () => {
         </div>
         <div className="w-[90%] md:w-[560px] mx-auto flex flex-col items-center justify-center gap-5">
           <LinkItem text="Join Mickey DeGods">
-            {/* TODO: blur link with both attributes */}
-            <Button className="bg-tertiary flex items-center justify-center gap-1 w-[140px] py-[10px]">
+            <Button
+              clickFunc={() =>
+                window.open(
+                  "https://blur.io/collection/degods",
+                  "_blank",
+                  "noopener noreferrer"
+                )
+              }
+              className="bg-tertiary flex items-center justify-center gap-1 w-[140px] py-[10px]"
+            >
               <p className="text-primary text-lg font-primaryBold">Buy on</p>
               <Image
                 src="/images/blur.png"
