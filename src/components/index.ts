@@ -22,10 +22,12 @@ const LinkItem = dynamic(() => import("./molecules/LinkItem"));
 const MEButton = dynamic(() => import("./molecules/MEButton"));
 const MenuItem = dynamic(() => import("./molecules/MenuItem"));
 const Nav = dynamic(() => import("./molecules/Nav"));
+const Partner = dynamic(() => import("./molecules/Partner"));
 
 // organisms
 const Members = dynamic(() => import("./organisms/Members"));
 const MenuItems = dynamic(() => import("./organisms/MenuItems"));
+const Partners = dynamic(() => import("./organisms/Partners"));
 const StakeCTA = dynamic(() => import("./organisms/StakeCTA"));
 
 // templates
@@ -34,6 +36,7 @@ const LandingView = dynamic(() => import("./templates/LandingView"));
 const LinksView = dynamic(() => import("./templates/LinksView"));
 const MembersView = dynamic(() => import("./templates/MembersView"));
 const MenuView = dynamic(() => import("./templates/MenuView"));
+const WalkInCooler = dynamic(() => import("./templates/WalkInCooler"));
 
 export {
   // @icons
@@ -56,9 +59,11 @@ export {
   MEButton,
   MenuItem,
   Nav,
+  Partner,
   // organisms
   Members,
   MenuItems,
+  Partners,
   StakeCTA,
   // templates
   AboutView,
@@ -66,4 +71,5 @@ export {
   LinksView,
   MembersView,
   MenuView,
+  WalkInCooler,
 };

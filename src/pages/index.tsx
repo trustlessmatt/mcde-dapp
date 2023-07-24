@@ -6,6 +6,7 @@ import {
   LinksView,
   MembersView,
   MenuView,
+  CollabsView,
 } from "@/components";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <MenuView />
       <LinksView />
       <GradientTransition />
+      <CollabsView />
       <Footer />
     </div>
   );
