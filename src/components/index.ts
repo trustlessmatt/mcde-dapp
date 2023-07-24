@@ -10,6 +10,7 @@ const TwitterFooter = dynamic(() => import("./@icons/TwitterFooter"));
 // atoms
 const Button = dynamic(() => import("./atoms/Button"));
 const MemberCard = dynamic(() => import("./atoms/MemberCard"));
+const MovingText = dynamic(() => import("./atoms/MovingText"));
 const SeasonSelector = dynamic(() => import("./atoms/SeasonSelector"));
 const TLDR = dynamic(() => import("./atoms/TLDR"));
 const TraitCard = dynamic(() => import("./atoms/TraitCard"));
@@ -41,6 +42,7 @@ export {
   // atoms
   Button,
   MemberCard,
+  MovingText,
   SeasonSelector,
   TLDR,
   TraitCard,

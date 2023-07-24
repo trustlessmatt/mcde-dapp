@@ -16,6 +16,7 @@ module.exports = {
         "custom-red": "#DA0048",
         "custom-blue": "#3F7CF5",
         "custom-black": "#1B1B1B",
+        "custom-yellow": "#FDDC68",
         "me-purple": "#B113AE",
       },
       fontFamily: {
