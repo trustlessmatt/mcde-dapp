@@ -51,6 +51,8 @@ span {
   height: 150px;
   background: url("/images/md_burger.png");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   pointer-events: none;
   border-radius: 50%;
 }

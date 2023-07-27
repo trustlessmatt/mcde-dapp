@@ -10,7 +10,9 @@ const ScratchOff: FC = () => {
   useMouseMoveEffect();
 
   return (
-    <div className="z-0 landing flex flex-1 flex-col items-center justify-center gap-10 ">
+    <div
+      className={`z-0 landing flex flex-1 flex-col items-center justify-center gap-10`}
+    >
       <Image
         src="/images/fries_logo.png"
         width={366}
