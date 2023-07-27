@@ -4,7 +4,7 @@ import { Partner } from "@/components";
 const Partners: FC = () => {
   return (
     <>
-      <div className="hidden md:flex w-full flex-col gap-16 items-center">
+      <div className="hidden lg:flex w-full flex-col gap-16 items-center">
         <div className="w-full flex items-center justify-between">
           <Partner
             image="/images/partners/ugs_labs.png"
@@ -74,7 +74,7 @@ const Partners: FC = () => {
             link="https://twitter.com/DegenPicksXYZ"
           />
         </div>
-        <div className="w-full flex items-center justify-between px-40">
+        <div className="w-full h-full flex items-center justify-between px-40">
           <Partner
             image="/images/partners/gossip_goblin.png"
             name="Gossip Goblin"
@@ -95,7 +95,7 @@ const Partners: FC = () => {
       </div>
 
       {/* mobile view */}
-      <div className="flex md:hidden w-full flex-col gap-10 items-center px-10">
+      <div className="flex lg:hidden w-full flex-col gap-10 items-center px-10">
         <div className="w-full flex items-center justify-between">
           <Partner
             image="/images/partners/ugs_labs.png"

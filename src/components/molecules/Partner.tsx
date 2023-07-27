@@ -13,7 +13,9 @@ interface Props {
 const Partner: FC<Props> = ({ image, name, link, width = null }) => {
   return (
     <motion.a
-      className="flex flex-col items-center justify-end gap-[10px] py-5"
+      className={`flex flex-col items-center justify-between gap-[10px] py-5 ${
+        width === null ? "w-[100px] lg:w-auto" : ""
+      } h-full`}
       {...smallClickAnimation}
       href={link}
     >
