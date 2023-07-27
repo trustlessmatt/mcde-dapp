@@ -30,3 +30,27 @@ h2 {
 .thumbTranslate {
   transform: translateX(70px);
 }
+
+/* scratchoff */
+.landing {
+  width: 100%;
+  height: 100%;
+  background: white;
+  background-size: 30px 30px;
+  background-blend-mode: difference;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+span {
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url("/images/md_burger.png");
+  background-size: cover;
+  pointer-events: none;
+  border-radius: 50%;
+}

@@ -35,6 +35,7 @@ const SeasonSelectorToggle = dynamic(
 const Members = dynamic(() => import("./organisms/Members"));
 const MenuItems = dynamic(() => import("./organisms/MenuItems"));
 const Partners = dynamic(() => import("./organisms/Partners"));
+const ScratchOff = dynamic(() => import("./organisms/ScratchOff"));
 const StakeCTA = dynamic(() => import("./organisms/StakeCTA"));
 
 // templates
@@ -75,6 +76,7 @@ export {
   Members,
   MenuItems,
   Partners,
+  ScratchOff,
   StakeCTA,
   // templates
   AboutView,
