@@ -12,11 +12,14 @@ const Footer: FC = () => {
     }
   };
   return (
-    <div className="w-full bg-custom-black">
+    <div className="w-full bg-custom-black text-lg">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="relative w-[90%] max-w-[1600px] flex items-center justify-between py-10 px-20 border-b border-dark-border">
+        <div
+          className="relative w-[90%] max-w-[1600px] flex flex-col lg:flex-row 
+          items-center justify-between py-10 px-20 border-b border-dark-border"
+        >
           {/* mickey branding */}
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-2 lg:gap-5">
             <Image
               src="/images/fries_logo_white.png"
               width={20}
@@ -26,7 +29,10 @@ const Footer: FC = () => {
             <p className="text-white font-primaryBold">Mickey DeGods</p>
           </div>
           {/* second nav */}
-          <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-5 text-primary">
+          <div
+            className="lg:absolute lg:left-1/2 lg:-translate-x-1/2 flex flex-col 
+          lg:flex-row items-center gap-2 lg:gap-5 py-4 lg:py-0 text-primary"
+          >
             <p
               className={`${
                 pathname === "/" && "font-primaryBold"
