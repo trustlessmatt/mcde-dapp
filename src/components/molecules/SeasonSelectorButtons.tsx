@@ -7,7 +7,7 @@ interface Props {
   setSeason: Dispatch<SetStateAction<1 | 2>>;
 }
 
-const SeasonSelector: FC<Props> = ({ season, setSeason }) => {
+const SeasonSelectorButtons: FC<Props> = ({ season, setSeason }) => {
   return (
     <div className="h-[40px] bg-primary flex items-center border border-tertiary">
       <motion.button
@@ -35,4 +35,4 @@ const SeasonSelector: FC<Props> = ({ season, setSeason }) => {
   );
 };
 
-export default SeasonSelector;
+export default SeasonSelectorButtons;

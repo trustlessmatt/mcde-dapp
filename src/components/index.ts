@@ -12,8 +12,8 @@ const Button = dynamic(() => import("./atoms/Button"));
 const GradientTransition = dynamic(() => import("./atoms/GradientTransition"));
 const MemberCard = dynamic(() => import("./atoms/MemberCard"));
 const MovingText = dynamic(() => import("./atoms/MovingText"));
-const SeasonSelector = dynamic(() => import("./atoms/SeasonSelector"));
 const TLDR = dynamic(() => import("./atoms/TLDR"));
+const Toggle = dynamic(() => import("./atoms/Toggle"));
 const TraitCard = dynamic(() => import("./atoms/TraitCard"));
 
 // molecules
@@ -24,6 +24,12 @@ const MenuItem = dynamic(() => import("./molecules/MenuItem"));
 const Nav = dynamic(() => import("./molecules/Nav"));
 const PageHead = dynamic(() => import("./molecules/PageHead"));
 const Partner = dynamic(() => import("./molecules/Partner"));
+const SeasonSelectorButtons = dynamic(
+  () => import("./molecules/SeasonSelectorButtons")
+);
+const SeasonSelectorToggle = dynamic(
+  () => import("./molecules/SeasonSelectorToggle")
+);
 
 // organisms
 const Members = dynamic(() => import("./organisms/Members"));
@@ -52,8 +58,10 @@ export {
   GradientTransition,
   MemberCard,
   MovingText,
-  SeasonSelector,
+  SeasonSelectorButtons,
+  SeasonSelectorToggle,
   TLDR,
+  Toggle,
   TraitCard,
   // molecules
   Footer,

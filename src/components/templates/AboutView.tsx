@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { SeasonSelector, TLDR, TraitCard } from "@/components";
+import { SeasonSelectorToggle, TLDR, TraitCard } from "@/components";
 import axios from "axios";
 
 const AboutView: FC = () => {
@@ -23,12 +23,12 @@ const AboutView: FC = () => {
       <div className="w-full h-full md:max-w-[1800px] md:mx-auto flex flex-col lg:flex-row items-center justify-evenly gap-5">
         <TLDR />
         <div className="lg:hidden pt-12 pb-6">
-          <SeasonSelector season={season} setSeason={setSeason} />
+          <SeasonSelectorToggle setSeason={setSeason} />
         </div>
         {/* flex-col md:flex-row */}
         <div className="relative flex items-center gap-5">
           <div className="hidden lg:block absolute -top-20 right-0">
-            <SeasonSelector season={season} setSeason={setSeason} />
+            <SeasonSelectorToggle setSeason={setSeason} />
           </div>
           <TraitCard
             name="Mickey DeGods Visor"

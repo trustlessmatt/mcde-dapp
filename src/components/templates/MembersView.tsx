@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import { Members, SeasonSelector } from "@/components";
+import { Members, SeasonSelectorToggle } from "@/components";
 
 const MembersView: FC = () => {
   const [season, setSeason] = useState<1 | 2>(2);
@@ -10,7 +10,7 @@ const MembersView: FC = () => {
         <p className="text-center -mt-4 mb-2">
           Holder directory with de[id] coming soon.
         </p>
-        <SeasonSelector season={season} setSeason={setSeason} />
+        <SeasonSelectorToggle setSeason={setSeason} />
         <Members season={season} />
       </div>
     </div>

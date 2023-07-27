@@ -25,3 +25,8 @@ html {
 h2 {
   @apply text-tertiary font-primaryBold text-[32px];
 }
+
+/* ToggleSwitch */
+.thumbTranslate {
+  transform: translateX(70px);
+}
