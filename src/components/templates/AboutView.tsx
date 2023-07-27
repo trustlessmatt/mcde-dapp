@@ -32,7 +32,9 @@ const AboutView: FC = () => {
           </div>
           <TraitCard
             name="Mickey DeGods Visor"
-            image={`/images/attributes/visor_s${season ?? 2}.png`}
+            image1="/images/attributes/visor_s1.png"
+            image2="/images/attributes/visor_s2.png"
+            season={season}
             supply={125}
             rarity={1.32}
             link="https://blur.io/collection/degods?traits=%7B%22head%22%3A%5B%22Mickey+DeGods+Visor%22%5D%7D"
@@ -40,7 +42,9 @@ const AboutView: FC = () => {
           />
           <TraitCard
             name="Mickey DeGods Polo"
-            image={`/images/attributes/uniform_s${season ?? 2}.png`}
+            image1="/images/attributes/uniform_s1.png"
+            image2="/images/attributes/uniform_s2.png"
+            season={season}
             supply={139}
             rarity={1.47}
             link="https://blur.io/collection/degods?traits=%7B%22clothes%22%3A%5B%22Mickey+DeGods+Uniform%22%5D%7D"
