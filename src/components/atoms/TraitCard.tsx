@@ -8,6 +8,7 @@ interface Props {
   supply: number;
   rarity: number;
   price?: string;
+  link: string;
 }
 
 const TraitCard: FC<Props> = ({
@@ -16,6 +17,7 @@ const TraitCard: FC<Props> = ({
   supply,
   rarity,
   price = null,
+  link,
 }) => {
   return (
     <div className="w-[270px] bg-primary flex flex-col">
@@ -36,12 +38,17 @@ const TraitCard: FC<Props> = ({
       </div>
       <div className="w-full px-5 pb-5">
         <Button
-          className="w-full bg-custom-blue font-primaryBold text-primary h-[40px]"
-          clickFunc={() => null}
+          className="w-full bg-black font-primaryBold text-primary h-[40px]"
+          clickFunc={() => window.open(link, "_blank", "noopener noreferrer")}
         >
           <div className="flex items-center justify-center gap-2">
             <p className="">Buy on</p>
-            <OpenSea className="w-5" />
+            <Image
+              src="/images/blur.png"
+              width={50}
+              height={20}
+              alt="magic eden logo"
+            />
             <div className="bg-primary w-[1px] h-5" />
             <p>{price ?? "PRICELESS"}</p>
           </div>
