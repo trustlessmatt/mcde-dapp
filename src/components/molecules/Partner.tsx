@@ -13,7 +13,7 @@ interface Props {
 const Partner: FC<Props> = ({ image, name, link, width = null }) => {
   return (
     <motion.a
-      className={`flex flex-col items-center justify-between gap-[10px] py-5 ${
+      className={`relative flex flex-col items-center justify-between gap-[10px] py-5 ${
         width === null ? "w-[100px] lg:w-auto" : ""
       } h-full`}
       {...smallClickAnimation}
@@ -24,9 +24,11 @@ const Partner: FC<Props> = ({ image, name, link, width = null }) => {
         width={width === null ? 80 : width}
         height={80}
         alt={name}
-        className="overflow-hidden rounded-full"
+        className="overflow-hidden rounded-full min-h-[80px]"
       />
-      <p className="text-lg md:text-2xl text-primary text-center">{name}</p>
+      <p className="w-[130px] absolute left-1/2 -translate-x-1/2 top-[120px] text-lg md:text-2xl text-primary text-center">
+        {name}
+      </p>
     </motion.a>
   );
 };
