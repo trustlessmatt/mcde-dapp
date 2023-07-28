@@ -9,7 +9,7 @@ const LandingView: FC = () => {
   const isMobile = width < 768;
 
   return (
-    <div className="relative bg-primary w-full h-screen flex flex-col overflow-hidden">
+    <div className="relative bg-primary w-full h-[60vh] md:h-screen flex flex-col overflow-hidden">
       <Nav />
       <AnimatePresence mode="wait">
         <motion.div
@@ -21,8 +21,10 @@ const LandingView: FC = () => {
             duration: 3.6,
           }}
         >
-          <div className="z-30 flex items-center gap-2">
-            <p className="text-xl md:text-3xl text-tertiary">The original</p>
+          <div className="z-30 flex items-center justify-center gap-2">
+            <p className="text-xl md:text-3xl text-tertiary whitespace-nowrap">
+              The original
+            </p>
             <Image
               src="/images/degods_text.png"
               width={isMobile ? 64 : 86}
@@ -31,11 +33,13 @@ const LandingView: FC = () => {
               className="pb-0.5 md:pb-0"
               onDragStart={(e) => e.preventDefault()}
             />
-            <p className="text-xl md:text-3xl text-tertiary">sub-community.</p>
+            <p className="text-xl md:text-3xl text-tertiary whitespace-nowrap">
+              sub-community.
+            </p>
           </div>
         </motion.div>
         <motion.div
-          className="w-full h-full"
+          className="w-full h-full hidden md:block"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -43,6 +47,19 @@ const LandingView: FC = () => {
         >
           <ScratchOff />
         </motion.div>
+        <motion.div
+          className="w-full h-full md:hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.5, delay: 3.7 }}
+          style={{
+            backgroundImage: 'url("/images/md_burger.png")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            zIndex: 20,
+          }}
+        />
       </AnimatePresence>
     </div>
   );

@@ -1,7 +1,10 @@
 import { useEffect } from "react";
+import { useWindowSize } from "./useWindowSize";
 
 const useMouseMoveEffect = () => {
+  const [width] = useWindowSize();
   useEffect(() => {
+    if (width < 768) return;
     const handleMouseDown = (e: any) => {
       const landingDiv = e.currentTarget;
       const bubble = document.createElement("span");

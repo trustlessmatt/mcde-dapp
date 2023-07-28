@@ -6,7 +6,7 @@ interface Props {
 }
 
 const SeasonSelectorToggle: FC<Props> = ({ setSeason }) => {
-  const [isToggled, setIsToggled] = useState<boolean>(false);
+  const [isToggled, setIsToggled] = useState<boolean>(true);
 
   useEffect(() => {
     if (isToggled) {

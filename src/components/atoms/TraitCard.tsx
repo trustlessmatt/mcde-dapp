@@ -25,7 +25,7 @@ const TraitCard: FC<Props> = ({
   link,
 }) => {
   return (
-    <div className="w-[270px] bg-primary flex flex-col">
+    <div className="min-w-[270px] bg-primary flex flex-col">
       {/* header */}
       <div className="w-full h-10 flex items-center bg-tertiary px-5">
         <p className="text-lg text-primary font-primaryBold">{name}</p>

@@ -21,7 +21,7 @@ const ScratchOff: FC = () => {
         onDragStart={(e) => e.preventDefault()}
       />
       <div className="flex items-center justify-center">
-        <p className="md:text-lg font-primaryBold text-custom-red uppercase">
+        <p className="hidden md:block md:text-lg font-primaryBold text-custom-red uppercase">
           Scratch to reveal
         </p>
       </div>
