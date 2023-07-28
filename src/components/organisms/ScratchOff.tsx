@@ -1,12 +1,8 @@
 import { FC } from "react";
 import Image from "next/image";
-import { useWindowSize } from "@/hooks/useWindowSize";
 import useMouseMoveEffect from "@/hooks/useMouseMoveEffect";
 
 const ScratchOff: FC = () => {
-  const [width] = useWindowSize();
-  const isMobile = width < 768;
-
   useMouseMoveEffect();
 
   return (

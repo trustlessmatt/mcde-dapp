@@ -14,6 +14,7 @@ const LandingView: FC = () => {
       <AnimatePresence mode="wait">
         <motion.div
           className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+          key={1}
           animate={{
             opacity: [0, 1, 0],
           }}
@@ -40,6 +41,7 @@ const LandingView: FC = () => {
         </motion.div>
         <motion.div
           className="w-full h-full hidden md:block"
+          key={2}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -49,6 +51,7 @@ const LandingView: FC = () => {
         </motion.div>
         <motion.div
           className="w-full h-full md:hidden"
+          key={3}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

@@ -41,7 +41,7 @@ const useMouseMoveEffect = () => {
         landingDiv.removeEventListener("mousedown", handleMouseDown);
       }
     };
-  }, []);
+  }, [width]);
 };
 
 export default useMouseMoveEffect;
