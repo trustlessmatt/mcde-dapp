@@ -1,10 +1,13 @@
 import { FC } from "react";
 import Image from "next/image";
-import { Button, OpenSea } from "@/components";
+import { Button } from "@/components";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface Props {
   name: string;
-  image: string;
+  image1: string;
+  image2: string;
+  season: 1 | 2;
   supply: number;
   rarity: number;
   price?: string;
@@ -13,19 +16,54 @@ interface Props {
 
 const TraitCard: FC<Props> = ({
   name,
-  image,
+  image1,
+  image2,
+  season,
   supply,
   rarity,
   price = null,
   link,
 }) => {
   return (
-    <div className="w-[270px] bg-primary flex flex-col">
+    <div className="min-w-[270px] bg-primary flex flex-col">
       {/* header */}
       <div className="w-full h-10 flex items-center bg-tertiary px-5">
         <p className="text-lg text-primary font-primaryBold">{name}</p>
       </div>
-      <Image src={image} width={270} height={270} alt={name} />
+      <AnimatePresence mode="wait">
+        {season === 1 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            key="season1"
+          >
+            <Image
+              src={image1}
+              width={270}
+              height={270}
+              alt="Mickey DeGods trait season 1"
+            />
+          </motion.div>
+        )}
+        {season === 2 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            key="season2"
+          >
+            <Image
+              src={image2}
+              width={270}
+              height={270}
+              alt="Mickey DeGods trait season 2"
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
       <div className="h-16 py-2 flex items-center justify-between px-5">
         <div className="flex flex-col">
           <p className="text-sm text-tertiary">Supply</p>
