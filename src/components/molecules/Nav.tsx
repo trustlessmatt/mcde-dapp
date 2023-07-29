@@ -14,7 +14,7 @@ const Nav: FC = () => {
 
   const variants = {
     visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: -25 },
+    hidden: { opacity: 0, y: -60 },
   };
 
   const handleRouter = (path: string) => {
