@@ -24,6 +24,8 @@ const Partner: FC<Props> = ({
       gap-[10px] py-5 w-[120px] lg:w-auto h-full mx-auto`}
       {...smallClickAnimation}
       href={link}
+      target="_blank"
+      rel="noreferrer noopener"
     >
       <Image
         src={image}
