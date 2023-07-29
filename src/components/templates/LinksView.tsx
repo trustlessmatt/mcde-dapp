@@ -38,8 +38,9 @@ const LinksView: FC = () => {
           </LinkItem>
           <LinkItem text="Stake Combos for $DUST">
             <Button
-              className="bg-tertiary flex items-center justify-center w-[140px] py-[10px]"
-              clickFunc={() => router.push("/staking")}
+              className="bg-tertiary flex items-center justify-center w-[140px] py-[10px] disabled:cursor-not-allowed"
+              disabled
+              // clickFunc={() => router.push("/staking")}
             >
               <p className="text-primary text-lg font-primaryBold">Staking</p>
             </Button>
