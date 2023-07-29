@@ -11,7 +11,7 @@ const TLDR: FC = () => (
       <li className="font-primaryBold">TL;DR</li>
       <li>👉 1st ever DeGods sub-community</li>
       <li>👉 Elite holders</li>
-      <li>👉 The infamous “Mickey DeGods Walk-In” & holder only chats</li>
+      <li>👉 The infamous “Mickey DeGods Walk-In” holder only chat</li>
       <li>👉 Unmatched alpha, giveaways, & WL opportunities</li>
       <li>👉 Launched a sub-collection that’s still emitting $DUST</li>
       <li>👉 We’re burnin’ it!</li>

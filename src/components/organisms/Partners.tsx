@@ -174,24 +174,26 @@ const Partners: FC = () => {
             link="https://twitter.com/oogyNFT"
           />
         </div>
-        <Partner
-          image="/images/partners/degodcast.png"
-          name="DeGodCast"
-          link="https://twitter.com/DeGodCast"
-          width={250}
-        />
-        <Partner
-          image="/images/partners/mcy00ts.png"
-          name="McY00ts"
-          link="https://twitter.com/TheMcY00ts"
-          width={250}
-        />
-        <Partner
-          image="/images/partners/nippies.png"
-          name="Nippies"
-          link="https://twitter.com/Nippies_"
-          width={250}
-        />
+        <div className="flex flex-col items-center justify-center">
+          <Partner
+            image="/images/partners/degodcast.png"
+            name="DeGodCast"
+            link="https://twitter.com/DeGodCast"
+            width={250}
+          />
+          <Partner
+            image="/images/partners/mcy00ts.png"
+            name="McY00ts"
+            link="https://twitter.com/TheMcY00ts"
+            width={250}
+          />
+          <Partner
+            image="/images/partners/nippies.png"
+            name="Nippies"
+            link="https://twitter.com/Nippies_"
+            width={250}
+          />
+        </div>
       </div>
     </>
   );

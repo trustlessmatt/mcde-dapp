@@ -78,7 +78,7 @@ const Footer: FC = () => {
           </div>
         </div>
         <div className="flex items-center justify-center w-full py-5 px-20">
-          <p className="text-dark-border text-center">
+          <p className="text-dark-border text-center whitespace-nowrap">
             The original{" "}
             <a
               href="https://degods.com"

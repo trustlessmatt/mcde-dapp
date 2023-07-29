@@ -32,7 +32,7 @@ const LandingView: FC = () => {
 
   return (
     <div
-      className=" cursor-grabbing relative bg-primary w-full h-[60vh] md:h-screen 
+      className="cursor-grabbing relative bg-primary w-full h-[70vh] md:h-screen 
       flex flex-col overflow-hidden"
     >
       {/* <motion.div

@@ -22,14 +22,15 @@ const MobileMenu: FC<Props> = ({ open, setOpen }) => {
   return (
     <>
       <div
-        className={`flex items-start overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 translate-x-full z-50 w-screen h-screen 
-          ${open && "transition -translate-x-0 ease-in-out duration-500"} 
-          ${
-            !open &&
-            numCloses > 0 &&
-            "transition translate-x-full ease-in-out duration-500"
-          }`}
-        // onClick={() => setOpen(!open)}
+        className={`flex items-start overflow-y-auto overflow-x-hidden fixed top-0 
+        right-0 left-0 translate-x-full z-50 w-screen h-screen 
+        ${open && "transition -translate-x-0 ease-in-out duration-500"} 
+        ${
+          !open &&
+          numCloses > 0 &&
+          "transition translate-x-full ease-in-out duration-500"
+        }`}
+        onClick={() => setOpen(!open)}
       >
         <div
           className={`text-tertiary bg-primary
