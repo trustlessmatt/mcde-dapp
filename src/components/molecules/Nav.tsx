@@ -17,10 +17,6 @@ const Nav: FC = () => {
     }
   };
 
-  useEffect(() => {
-    console.log("menu is open: ", open);
-  }, [open]);
-
   return (
     <>
       <motion.div
