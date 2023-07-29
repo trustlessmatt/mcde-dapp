@@ -44,8 +44,8 @@ const Footer: FC = () => {
             <p
               className={`${
                 pathname === "/staking" && "font-primaryBold"
-              } cursor-pointer`}
-              onClick={() => handleRouter("/staking")}
+              } cursor-not-allowed`}
+              // onClick={() => handleRouter("/staking")}
             >
               Staking
             </p>
