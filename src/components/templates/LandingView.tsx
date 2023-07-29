@@ -1,25 +1,56 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import { Nav, ScratchOff } from "@/components";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, easeInOut, motion } from "framer-motion";
 import { useWindowSize } from "@/hooks/useWindowSize";
 
 const LandingView: FC = () => {
   const [width] = useWindowSize();
   const isMobile = width < 768;
 
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  // const variants = {
+  //   default: {
+  //     x: mousePosition.x - 30,
+  //     y: mousePosition.y - 30,
+  //     transition: {
+  //       duration: 0.1,
+  //     },
+  //   },
+  // };
+
+  // useEffect(() => {
+  //   const mouseMove = (e: MouseEvent) => {
+  //     setMousePosition({ x: e.clientX, y: e.clientY });
+  //   };
+
+  //   window.addEventListener("mousemove", mouseMove);
+
+  //   return () => window.removeEventListener("mousemove", mouseMove);
+  // }, []);
+
   return (
-    <div className="relative bg-primary w-full h-[60vh] md:h-screen flex flex-col overflow-hidden">
+    <div
+      className=" cursor-grabbing relative bg-primary w-full h-[60vh] md:h-screen 
+      flex flex-col overflow-hidden"
+    >
+      {/* <motion.div
+        className="cursor"
+        variants={variants}
+        animate="default"
+        transition={easeInOut}
+      /> */}
       <Nav />
       <AnimatePresence mode="wait">
         <motion.div
           className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
           key={1}
           animate={{
-            opacity: [0, 1, 0],
+            opacity: [0, 1, 1, 1, 0],
           }}
           transition={{
-            duration: 3.6,
+            duration: 4,
           }}
         >
           <div className="z-30 flex items-center justify-center gap-2">
@@ -45,7 +76,7 @@ const LandingView: FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, delay: 3.7 }}
+          transition={{ duration: 1.2, delay: 4 }}
         >
           <ScratchOff />
         </motion.div>
@@ -55,7 +86,7 @@ const LandingView: FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, delay: 3.7 }}
+          transition={{ duration: 1.2, delay: 4 }}
           style={{
             backgroundImage: 'url("/images/md_burger.png")',
             backgroundSize: "cover",

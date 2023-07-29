@@ -4,7 +4,7 @@ import { Partner } from "@/components";
 const Partners: FC = () => {
   return (
     <>
-      <div className="hidden lg:flex w-full flex-col gap-16 items-center">
+      <div className="hidden lg:flex w-full flex-col gap-10 items-center">
         <div className="w-full flex items-center justify-between">
           <Partner
             image="/images/partners/ugs_labs.png"
@@ -25,6 +25,7 @@ const Partners: FC = () => {
             image="/images/partners/degen_picks.png"
             name="Degen Picks"
             link="https://twitter.com/DegenPicksXYZ"
+            rounded={false}
           />
           <Partner
             image="/images/partners/josie.png"
@@ -38,18 +39,21 @@ const Partners: FC = () => {
             name="DeGodCast"
             link="https://twitter.com/DeGodCast"
             width={250}
+            rounded={false}
           />
           <Partner
             image="/images/partners/mcy00ts.png"
             name="McY00ts"
             link="https://twitter.com/TheMcY00ts"
             width={250}
+            rounded={false}
           />
           <Partner
             image="/images/partners/nippies.png"
             name="Nippies"
             link="https://twitter.com/Nippies_"
             width={250}
+            rounded={false}
           />
         </div>
         <div className="w-full flex items-center justify-between px-20">
@@ -74,7 +78,7 @@ const Partners: FC = () => {
             link="https://twitter.com/Bad_trip_mask"
           />
         </div>
-        <div className="w-full h-full flex items-center justify-between px-40">
+        <div className="w-full h-full flex items-center justify-between px-40 mt-10">
           <Partner
             image="/images/partners/gossip_goblin.png"
             name="Gossip Goblin"
@@ -85,6 +89,7 @@ const Partners: FC = () => {
             name="GuzzlerDAO"
             link="https://twitter.com/GuzzlerDao"
             width={120}
+            rounded={false}
           />
           <Partner
             image="/images/partners/oogy.png"
@@ -119,6 +124,7 @@ const Partners: FC = () => {
             image="/images/partners/degen_picks.png"
             name="Degen Picks"
             link="https://twitter.com/DegenPicksXYZ"
+            rounded={false}
           />
           <Partner
             image="/images/partners/josie.png"
@@ -160,6 +166,7 @@ const Partners: FC = () => {
             name="GuzzlerDAO"
             link="https://twitter.com/GuzzlerDao"
             width={120}
+            rounded={false}
           />
           <Partner
             image="/images/partners/oogy.png"

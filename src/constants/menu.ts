@@ -30,6 +30,5 @@ export const menu: MenuItem[] = [
     name: "Special Fries",
     image: "/images/menu/special_fries.png",
     description: "1/1s",
-    topPadding: false,
   },
 ];

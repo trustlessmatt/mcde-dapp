@@ -8,9 +8,16 @@ interface Props {
   name: string;
   link: string;
   width?: number;
+  rounded?: boolean;
 }
 
-const Partner: FC<Props> = ({ image, name, link, width = null }) => {
+const Partner: FC<Props> = ({
+  image,
+  name,
+  link,
+  width = null,
+  rounded = true,
+}) => {
   return (
     <motion.a
       className={`relative flex flex-col items-center justify-between gap-[10px] py-5 ${
@@ -24,9 +31,11 @@ const Partner: FC<Props> = ({ image, name, link, width = null }) => {
         width={width === null ? 80 : width}
         height={80}
         alt={name}
-        className="overflow-hidden rounded-full min-h-[80px]"
+        className={`${
+          rounded ? "overflow-hidden rounded-full" : ""
+        } min-h-[80px]`}
       />
-      <p className="w-[130px] absolute left-1/2 -translate-x-1/2 top-[120px] text-lg md:text-2xl text-primary text-center">
+      <p className="w-[130px] absolute left-1/2 -translate-x-1/2 top-[120px] text-lg md:text-2xl text-tertiary text-center">
         {name}
       </p>
     </motion.a>

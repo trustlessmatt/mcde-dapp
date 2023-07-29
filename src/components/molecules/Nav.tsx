@@ -18,23 +18,28 @@ const Nav: FC = () => {
   };
 
   return (
-    <div className="z-50 bg-primary h-20 w-full">
-      <div className="w-[90%] h-full mx-auto flex items-center justify-end md:justify-between border-b border-light-border gap-3">
+    <motion.div
+      className="z-50 bg-primary h-20 w-full"
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1, delay: 4.2 }}
+    >
+      <div className="w-[90%] h-full mx-auto flex items-center justify-end md:justify-between gap-3">
         <Image
-          src="/images/fries_logo.png"
+          src="/images/fries_logo_red.png"
           width={40}
           height={40}
           alt="fries logo"
           className="md:hidden absolute left-1/2 -translate-x-1/2"
         />
         <Image
-          src="/images/fries_logo.png"
+          src="/images/fries_logo_red.png"
           width={40}
           height={40}
           alt="fries logo"
           className="hidden md:block"
         />
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden md:flex items-center gap-10">
           <p
             className={`${
               pathname === "/" && "font-primaryBold"
@@ -72,14 +77,14 @@ const Nav: FC = () => {
             href="https://twitter.com/MickeyDeGods"
             rel="noreferrer noopener"
           >
-            <Twitter className="w-6" />
+            <Twitter className="w-5" />
           </motion.a>
           <motion.a
             {...smallClickAnimation}
             href="https://discord.gg/UwAUPgzgmZ"
             rel="noreferrer noopener"
           >
-            <Discord className="w-7" />
+            <Discord className="w-6" />
           </motion.a>
           {/* <p className="text-2xl">Connect Wallet</p> */}
         </div>
@@ -104,7 +109,7 @@ const Nav: FC = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

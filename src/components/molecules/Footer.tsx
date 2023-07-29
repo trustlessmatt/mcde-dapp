@@ -31,7 +31,7 @@ const Footer: FC = () => {
           {/* second nav */}
           <div
             className="lg:absolute lg:left-1/2 lg:-translate-x-1/2 flex flex-col 
-          lg:flex-row items-center gap-2 lg:gap-5 py-4 lg:py-0 text-primary"
+          lg:flex-row items-center gap-2 lg:gap-12 py-4 lg:py-0 text-primary"
           >
             <p
               className={`${
@@ -79,7 +79,16 @@ const Footer: FC = () => {
         </div>
         <div className="flex items-center justify-center w-full py-5 px-20">
           <p className="text-dark-border text-center">
-            The original DeGods sub-community.
+            The original{" "}
+            <a
+              href="https://degods.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline"
+            >
+              DeGods
+            </a>{" "}
+            sub-community.
           </p>
         </div>
       </div>
