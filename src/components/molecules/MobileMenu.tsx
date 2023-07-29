@@ -25,7 +25,7 @@ const MobileMenu: FC<Props> = ({ open, setOpen }) => {
     <div
       className={`flex items-start overflow-y-auto overflow-x-hidden fixed top-0
         right-0 left-0 -translate-y-full z-50 w-screen h-screen
-        ${open && "transition -translate-y-0 ease-in-out duration-500"}
+        ${open && "transition translate-y-0 ease-in-out duration-500"}
         ${
           !open &&
           numCloses > 0 &&
