@@ -14,7 +14,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center">
+    <div className="w-full min-h-screen flex flex-col items-center overflow-x-hidden">
       <PageHead
         title="Mickey DeGods"
         description="The original DeGods sub-community."
