@@ -19,7 +19,7 @@ const AboutView: FC = () => {
   }, []);
 
   return (
-    <div className="bg-secondary w-full pt-10 pb-20 md:py-40">
+    <div className="bg-secondary w-full pt-10 pb-20 md:py-20">
       <div className="w-full h-full md:max-w-[1800px] md:mx-auto flex flex-col lg:flex-row items-center justify-evenly gap-5">
         <TLDR />
         <div className="lg:hidden pt-12">
@@ -27,7 +27,7 @@ const AboutView: FC = () => {
         </div>
         {/* flex-col md:flex-row */}
         <div className="relative">
-          <div className="hidden lg:block absolute -top-20 right-0">
+          <div className="hidden lg:block absolute -top-12 right-0">
             <SeasonSelectorToggle setSeason={setSeason} />
           </div>
           <div className="w-full max-w-[100vw] flex items-center overflow-x-auto gap-3 lg:gap-6 mb-4 py-6 px-10 lg:px-0">

@@ -2,14 +2,20 @@ import { FC, useEffect, useState } from "react";
 import Image from "next/image";
 import { Discord, Twitter } from "@/components";
 import { useRouter } from "next/router";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { smallClickAnimation } from "@/constants/framer.config";
 import MobileMenu from "./MobileMenu";
 
 const Nav: FC = () => {
   const { push, pathname } = useRouter();
-
+  const [hidden, setHidden] = useState(false);
   const [open, setOpen] = useState(false);
+  const { scrollY } = useScroll();
+
+  const variants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: -25 },
+  };
 
   const handleRouter = (path: string) => {
     if (pathname !== path) {
@@ -17,13 +23,33 @@ const Nav: FC = () => {
     }
   };
 
+  const menuVisibility = () => {
+    //@ts-ignore-next-line
+    if (scrollY?.current < scrollY?.prev) {
+      setHidden(false);
+      //@ts-ignore-next-line
+    } else if (scrollY?.current > 100 && scrollY?.current > scrollY?.prev) {
+      setHidden(true);
+    }
+  };
+
+  useMotionValueEvent(scrollY, "change", () => {
+    return scrollY.onChange(() => menuVisibility());
+  });
+
+  useEffect(() => {
+    setTimeout(() => {
+      setHidden(false);
+    }, 4500);
+  }, []);
+
   return (
     <>
-      <motion.div
-        className="z-50 bg-primary h-20 w-full"
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1, delay: 4.2 }}
+      <motion.nav
+        className={`z-50 bg-primary h-20 w-full fixed`}
+        variants={variants}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
       >
         <div className="w-[90%] h-full mx-auto flex items-center justify-end md:justify-between gap-3">
           <Image
@@ -40,7 +66,7 @@ const Nav: FC = () => {
             alt="fries logo"
             className="hidden md:block"
           />
-          <div className="hidden md:flex items-center gap-10">
+          <div className={`hidden md:flex items-center gap-10`}>
             <p
               className={`${
                 pathname === "/" && "font-primaryBold"
@@ -110,7 +136,7 @@ const Nav: FC = () => {
             </svg>
           </div>
         </div>
-      </motion.div>
+      </motion.nav>
       <MobileMenu open={open} setOpen={setOpen} />
     </>
   );

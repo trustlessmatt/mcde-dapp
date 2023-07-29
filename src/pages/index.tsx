@@ -27,7 +27,7 @@ export default function Home() {
       <LinksView />
       {/* <GradientTransition /> */}
       <CollabsView />
-      <WalkInCooler />
+      {/* <WalkInCooler /> */}
       <Footer />
     </div>
   );

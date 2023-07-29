@@ -7,7 +7,7 @@ const LinksView: FC = () => {
   const router = useRouter();
 
   return (
-    <div className="bg-primary w-full py-16 md:py-32">
+    <div className="bg-primary w-full py-16 md:py-28">
       <div className="flex flex-col items-center justify-center gap-5">
         <div>
           <h2 className="text-center">Mickey Orientation</h2>
