@@ -5,7 +5,7 @@ const WalkInCooler: FC = () => {
   return (
     <div className="w-full bg-tertiary">
       <Image
-        src="/images/walkin.png"
+        src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/walkin.png`}
         width={1440}
         height={500}
         alt="walk-in cooler"

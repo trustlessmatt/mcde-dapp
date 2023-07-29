@@ -31,7 +31,7 @@ const LandingView: FC = () => {
   // }, []);
 
   return (
-    <div className="relative w-full h-screen flex flex-col overflow-hidden">
+    <div className="relative w-full lg:h-screen flex flex-col overflow-hidden">
       <Nav />
       <AnimatePresence mode="wait">
         <motion.div
@@ -49,7 +49,7 @@ const LandingView: FC = () => {
               The original
             </p>
             <Image
-              src="/images/degods_text.png"
+              src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/degods_text.png`}
               width={isMobile ? 64 : 86}
               height={isMobile ? 15 : 20}
               alt="degods text"
@@ -62,7 +62,7 @@ const LandingView: FC = () => {
           </div>
         </motion.div>
         <motion.video
-          className="hidden md:block w-screen h-full bg-secondary absolute inset-0 z-0"
+          className="hidden lg:block w-screen h-full bg-secondary absolute inset-0 z-0"
           autoPlay
           muted
           loop
@@ -79,7 +79,7 @@ const LandingView: FC = () => {
           />
         </motion.video>
         <motion.video
-          className="md:hidden w-screen absolute inset-0 z-0"
+          className="lg:hidden w-screen absolute inset-0 z-0"
           autoPlay
           muted
           loop
@@ -91,7 +91,7 @@ const LandingView: FC = () => {
           transition={{ duration: 1.2, delay: 4 }}
         >
           <source
-            src={`${process.env.NEXT_PUBLIC_CDN_URL}/videos/the_walk_in.mov`}
+            src={`${process.env.NEXT_PUBLIC_CDN_URL}/videos/the_walk_in_mobile.mov`}
             type="video/mp4"
           />
         </motion.video>

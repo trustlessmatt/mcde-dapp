@@ -20,7 +20,7 @@ const StakeCTA: FC = () => {
             <p>Combo 3 to 5 menu items, stakable for daily $DUST rewards.</p>
           </div>
           <Image
-            src="/images/combo.png"
+            src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/combo.png`}
             width={isMobile ? 150 : 173}
             height={isMobile ? 150 : 160}
             alt="combo NFT"

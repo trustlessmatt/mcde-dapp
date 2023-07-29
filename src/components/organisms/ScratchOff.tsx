@@ -10,7 +10,7 @@ const ScratchOff: FC = () => {
       className={`z-0 landing flex flex-1 flex-col items-center justify-center gap-10`}
     >
       <Image
-        src="/images/fries_logo.png"
+        src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/fries_logo.png`}
         width={366}
         height={366}
         alt="fries logo"

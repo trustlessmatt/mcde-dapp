@@ -29,7 +29,7 @@ const LinksView: FC = () => {
             >
               <p className="text-primary text-lg font-primaryBold">Buy on</p>
               <Image
-                src="/images/blur.png"
+                src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/blur.png`}
                 width={50}
                 height={20}
                 alt="magic eden logo"

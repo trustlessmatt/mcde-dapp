@@ -33,8 +33,8 @@ const AboutView: FC = () => {
           <div className="w-full max-w-[100vw] flex items-center overflow-x-auto gap-3 lg:gap-6 mb-4 py-6 px-10 lg:px-0">
             <TraitCard
               name="Mickey DeGods Visor"
-              image1="/images/attributes/visor_s1.png"
-              image2="/images/attributes/visor_s2.png"
+              image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/visor_s1.png`}
+              image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/visor_s2.png`}
               season={season}
               supply={125}
               rarity={1.32}
@@ -43,8 +43,8 @@ const AboutView: FC = () => {
             />
             <TraitCard
               name="Mickey DeGods Polo"
-              image1="/images/attributes/uniform_s1.png"
-              image2="/images/attributes/uniform_s2.png"
+              image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/uniform_s1.png`}
+              image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/uniform_s2.png`}
               season={season}
               supply={139}
               rarity={1.47}
