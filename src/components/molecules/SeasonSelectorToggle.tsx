@@ -18,8 +18,8 @@ const SeasonSelectorToggle: FC<Props> = ({ setSeason }) => {
 
   return (
     <Toggle
-      imageLeft="/images/fries_s1.png"
-      imageRight="/images/fries_s2.png"
+      imageLeft={`${process.env.NEXT_PUBLIC_CDN_URL}/images/fries_s1.png`}
+      imageRight={`${process.env.NEXT_PUBLIC_CDN_URL}/images/fries_s2.png`}
       isToggled={isToggled}
       setIsToggled={setIsToggled}
     />

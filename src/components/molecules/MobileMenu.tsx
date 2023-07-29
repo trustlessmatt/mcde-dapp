@@ -41,7 +41,7 @@ const MobileMenu: FC<Props> = ({ open, setOpen }) => {
         {/* header - laptop/monitor */}
         <div className="flex justify-end">
           <Image
-            src="/images/fries_logo.png"
+            src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/fries_logo.png`}
             width={40}
             height={40}
             alt="fries logo"

@@ -16,7 +16,7 @@ const MEButton: FC = () => {
     >
       <p className="font-primaryBold text-me-purple">Buy on</p>
       <Image
-        src="/images/magic_eden.png"
+        src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/magic_eden.png`}
         width={35}
         height={20}
         alt="magic eden logo"

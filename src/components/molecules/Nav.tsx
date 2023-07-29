@@ -53,14 +53,14 @@ const Nav: FC = () => {
       >
         <div className="w-[90%] h-full mx-auto flex items-center justify-end md:justify-between gap-3">
           <Image
-            src="/images/fries_logo_red.png"
+            src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/fries_logo_red.png`}
             width={40}
             height={40}
             alt="fries logo"
             className="md:hidden absolute left-1/2 -translate-x-1/2"
           />
           <Image
-            src="/images/fries_logo_red.png"
+            src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/fries_logo_red.png`}
             width={40}
             height={40}
             alt="fries logo"

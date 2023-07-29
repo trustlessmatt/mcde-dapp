@@ -73,7 +73,10 @@ const LandingView: FC = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1.2, delay: 4 }}
         >
-          <source src="/videos/the_walk_in.mov" type="video/mp4" />
+          <source
+            src={`${process.env.NEXT_PUBLIC_CDN_URL}/videos/the_walk_in.mov`}
+            type="video/mp4"
+          />
         </motion.video>
         <motion.video
           className="md:hidden w-screen absolute inset-0 z-0"
@@ -87,7 +90,10 @@ const LandingView: FC = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1.2, delay: 4 }}
         >
-          <source src="/videos/the_walk_in.mov" type="video/mp4" />
+          <source
+            src={`${process.env.NEXT_PUBLIC_CDN_URL}/videos/the_walk_in.mov`}
+            type="video/mp4"
+          />
         </motion.video>
       </AnimatePresence>
     </div>

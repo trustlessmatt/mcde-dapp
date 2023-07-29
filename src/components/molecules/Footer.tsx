@@ -21,7 +21,7 @@ const Footer: FC = () => {
           {/* mickey branding */}
           <div className="flex items-center gap-2 lg:gap-5">
             <Image
-              src="/images/fries_logo_white.png"
+              src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/fries_logo_white.png`}
               width={20}
               height={20}
               alt="fries logo"

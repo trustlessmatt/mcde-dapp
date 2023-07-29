@@ -82,7 +82,7 @@ const TraitCard: FC<Props> = ({
           <div className="flex items-center justify-center gap-2">
             <p className="">Buy on</p>
             <Image
-              src="/images/blur.png"
+              src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/blur.png`}
               width={50}
               height={20}
               alt="magic eden logo"
