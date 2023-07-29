@@ -20,22 +20,24 @@ const Partner: FC<Props> = ({
 }) => {
   return (
     <motion.a
-      className={`relative flex flex-col items-center justify-between gap-[10px] py-5 ${
-        width === null ? "w-[100px] lg:w-auto" : ""
-      } h-full`}
+      className={`relative flex flex-col items-center justify-between 
+      gap-[10px] py-5 w-[120px] lg:w-auto h-full mx-auto`}
       {...smallClickAnimation}
       href={link}
     >
       <Image
         src={image}
-        width={width === null ? 80 : width}
-        height={80}
+        width={width === null ? 60 : width}
+        height={60}
         alt={name}
         className={`${
           rounded ? "overflow-hidden rounded-full" : ""
-        } min-h-[80px]`}
+        } min-h-[60px]`}
       />
-      <p className="w-[130px] absolute left-1/2 -translate-x-1/2 top-[120px] text-lg md:text-2xl text-tertiary text-center">
+      <p
+        className="lg:w-[180px] absolute left-1/2 -translate-x-1/2 top-[90px] 
+        text-base md:text-lg lg:text-2xl text-tertiary text-center whitespace-nowrap"
+      >
         {name}
       </p>
     </motion.a>

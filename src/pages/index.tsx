@@ -24,10 +24,8 @@ export default function Home() {
       <AboutView />
       <MembersView />
       <MenuView />
-      <LinksView />
-      {/* <GradientTransition /> */}
       <CollabsView />
-      {/* <WalkInCooler /> */}
+      <LinksView />
       <Footer />
     </div>
   );

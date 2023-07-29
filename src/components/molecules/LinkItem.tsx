@@ -7,7 +7,7 @@ interface Props {
 
 const LinkItem: FC<Props> = ({ text, children }) => {
   return (
-    <div className="w-full bg-secondary flex items-center justify-between py-5 px-[30px]">
+    <div className="w-full bg-primary flex items-center justify-between py-5 px-[30px]">
       <p className="font-primaryBold text-xl text-tertiary max-w-[50%]">
         {text}
       </p>
