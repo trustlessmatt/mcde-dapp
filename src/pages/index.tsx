@@ -9,6 +9,7 @@ import {
   CollabsView,
   WalkInCooler,
   PageHead,
+  Nav,
 } from "@/components";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         url="https://mickeydegods.com/"
         twitter="MickeyDeGods"
       />
+      <Nav />
       <LandingView />
       <AboutView />
       <MembersView />

@@ -3,7 +3,7 @@ import { Partner } from "@/components";
 
 const Partners: FC = () => {
   return (
-    <div className="w-full grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-5 lg:gap-10">
+    <div className="w-full grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-5 lg:gap-10 px-2">
       <Partner
         image={`${process.env.NEXT_PUBLIC_CDN_URL}/images/partners/ugs_labs.png`}
         name="UGS Labs"

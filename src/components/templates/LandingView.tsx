@@ -1,38 +1,14 @@
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import Image from "next/image";
-import { Nav, ScratchOff } from "@/components";
-import { AnimatePresence, easeInOut, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "@/hooks/useWindowSize";
 
 const LandingView: FC = () => {
   const [width] = useWindowSize();
   const isMobile = width < 768;
 
-  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  // const variants = {
-  //   default: {
-  //     x: mousePosition.x - 30,
-  //     y: mousePosition.y - 30,
-  //     transition: {
-  //       duration: 0.1,
-  //     },
-  //   },
-  // };
-
-  // useEffect(() => {
-  //   const mouseMove = (e: MouseEvent) => {
-  //     setMousePosition({ x: e.clientX, y: e.clientY });
-  //   };
-
-  //   window.addEventListener("mousemove", mouseMove);
-
-  //   return () => window.removeEventListener("mousemove", mouseMove);
-  // }, []);
-
   return (
-    <div className="relative w-full lg:h-screen flex flex-col overflow-hidden">
-      <Nav />
+    <div className="relative w-full h-[40vh] sm:h-[70vh] lg:h-screen flex flex-col overflow-hidden mt-20 lg:mt-0">
       <AnimatePresence mode="wait">
         <motion.div
           className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 bg-primary w-full h-full"
