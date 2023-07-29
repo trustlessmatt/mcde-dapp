@@ -1,6 +1,5 @@
-import { FC, useRef } from "react";
-import { MEButton, MenuItems, MovingText, StakeCTA } from "@/components";
-import { useInView } from "framer-motion";
+import { FC } from "react";
+import { MEButton, MenuItems, StakeCTA } from "@/components";
 
 const MenuView: FC = () => {
   return (
