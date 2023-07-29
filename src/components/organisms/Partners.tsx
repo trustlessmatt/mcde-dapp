@@ -9,17 +9,17 @@ const Partners: FC = () => {
           <Partner
             image="/images/partners/ugs_labs.png"
             name="UGS Labs"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/UGS_Labs"
           />
           <Partner
             image="/images/partners/sharky.png"
             name="Sharky.fi"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/SharkyFi"
           />
           <Partner
             image="/images/partners/mob_studios.png"
             name="MOB Studios"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/mobstudios_"
           />
           <Partner
             image="/images/partners/degen_picks.png"
@@ -29,26 +29,26 @@ const Partners: FC = () => {
           <Partner
             image="/images/partners/josie.png"
             name="josie"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/joseline0x"
           />
         </div>
         <div className="w-full h-full flex items-center justify-between">
           <Partner
             image="/images/partners/degodcast.png"
             name="DeGodCast"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/DeGodCast"
             width={250}
           />
           <Partner
             image="/images/partners/mcy00ts.png"
             name="McY00ts"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/TheMcY00ts"
             width={250}
           />
           <Partner
             image="/images/partners/nippies.png"
             name="Nippies"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/Nippies_"
             width={250}
           />
         </div>
@@ -56,40 +56,40 @@ const Partners: FC = () => {
           <Partner
             image="/images/partners/pearly.png"
             name="Pearly"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/Pearlyrex"
           />
           <Partner
             image="/images/partners/annoyed_rex_club.png"
             name="Annoyed Rex Club"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/AnnoyedRexClub"
           />
           <Partner
             image="/images/partners/none_hallie.png"
             name="None Hallie"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/NoneHallie"
           />
           <Partner
             image="/images/partners/bad_trip_mask.png"
             name="Bad Trip Mask"
-            link="https://twitter.com/DegenPicksXYZ"
+            link="https://twitter.com/Bad_trip_mask"
           />
         </div>
         <div className="w-full h-full flex items-center justify-between px-40">
           <Partner
             image="/images/partners/gossip_goblin.png"
             name="Gossip Goblin"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/Gossip_Goblin"
           />
           <Partner
             image="/images/partners/guzzlerdao.png"
             name="GuzzlerDAO"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/GuzzlerDao"
             width={120}
           />
           <Partner
             image="/images/partners/oogy.png"
             name="Oogy"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/oogyNFT"
           />
         </div>
       </div>
@@ -100,17 +100,17 @@ const Partners: FC = () => {
           <Partner
             image="/images/partners/ugs_labs.png"
             name="UGS Labs"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/UGS_Labs"
           />
           <Partner
             image="/images/partners/sharky.png"
             name="Sharky.fi"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/SharkyFi"
           />
           <Partner
             image="/images/partners/mob_studios.png"
             name="MOB Studios"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/mobstudios_"
           />
         </div>
 
@@ -123,12 +123,12 @@ const Partners: FC = () => {
           <Partner
             image="/images/partners/josie.png"
             name="josie"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/joseline0x"
           />
           <Partner
             image="/images/partners/pearly.png"
             name="Pearly"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/Pearlyrex"
           />
         </div>
 
@@ -136,53 +136,53 @@ const Partners: FC = () => {
           <Partner
             image="/images/partners/annoyed_rex_club.png"
             name="Annoyed Rex Club"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/AnnoyedRexClub"
           />
           <Partner
             image="/images/partners/none_hallie.png"
             name="None Hallie"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/NoneHallie"
           />
           <Partner
             image="/images/partners/bad_trip_mask.png"
             name="Bad Trip Mask"
-            link="https://twitter.com/DegenPicksXYZ"
+            link="https://twitter.com/Bad_trip_mask"
           />
         </div>
         <div className="w-full flex items-center justify-between">
           <Partner
             image="/images/partners/gossip_goblin.png"
             name="Gossip Goblin"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/Gossip_Goblin"
           />
           <Partner
             image="/images/partners/guzzlerdao.png"
             name="GuzzlerDAO"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/GuzzlerDao"
             width={120}
           />
           <Partner
             image="/images/partners/oogy.png"
             name="Oogy"
-            link="https://twitter.com/MickeyDeGod"
+            link="https://twitter.com/oogyNFT"
           />
         </div>
         <Partner
           image="/images/partners/degodcast.png"
           name="DeGodCast"
-          link="https://twitter.com/MickeyDeGod"
+          link="https://twitter.com/DeGodCast"
           width={250}
         />
         <Partner
           image="/images/partners/mcy00ts.png"
           name="McY00ts"
-          link="https://twitter.com/MickeyDeGod"
+          link="https://twitter.com/TheMcY00ts"
           width={250}
         />
         <Partner
           image="/images/partners/nippies.png"
           name="Nippies"
-          link="https://twitter.com/MickeyDeGod"
+          link="https://twitter.com/Nippies_"
           width={250}
         />
       </div>
