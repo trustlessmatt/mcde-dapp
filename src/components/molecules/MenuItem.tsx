@@ -1,14 +1,23 @@
 import { FC } from "react";
 import Image from "next/image";
 import { MenuItem as MenuItemType } from "@/types";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 interface Props extends MenuItemType {
   index: number;
 }
 
 const MenuItem: FC<Props> = ({ image, name, description, index }) => {
-  const leftSideItem = index === 0 || index === 3;
-  const topRow = index < 3;
+  const [winWidth] = useWindowSize();
+  const isMobile = winWidth < 768;
+
+  const leftSideItem =
+    index === 0 ||
+    (!isMobile && index === 3) ||
+    (isMobile && index === 2) ||
+    (isMobile && index === 4);
+  const topRow = (!isMobile && index < 3) || (isMobile && index < 4);
+
   return (
     <div
       className={`w-[175px] flex flex-col gap-2 items-center 
