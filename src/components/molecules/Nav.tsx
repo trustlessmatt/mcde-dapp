@@ -95,7 +95,7 @@ const Nav: FC = () => {
           </div>
           <div
             className="md:hidden cursor-pointer pr-2 transition ease-in-out
-          md:hover:-translate-y-1 md:hover:scale-110 duration-300"
+            md:hover:-translate-y-1 md:hover:scale-110 duration-300"
             onClick={() => setOpen(true)}
           >
             <svg
