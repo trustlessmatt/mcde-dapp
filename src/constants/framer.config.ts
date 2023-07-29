@@ -156,9 +156,10 @@ export const slideLeft = (
   animate: boolean,
   distance: number = 300,
   duration: number = 1,
-  delay: number = 0, 
+  delay: number = 0,
+  startOpacity: number = 1
 ) => ({
-  initial: { x: distance, opacity: 0 },
+  initial: { x: distance, opacity: startOpacity },
   animate: { x: animate ? 0 : distance, opacity: animate ? 1 : 0 },
   transition: { duration: duration, ease: "easeInOut", delay: delay },
 });
@@ -166,7 +167,7 @@ export const slideRight = (
   animate: boolean,
   distance: number = -300,
   duration: number = 1,
-  delay: number = 0, 
+  delay: number = 0,
   startOpacity: number = 1
 ) => ({
   initial: { x: distance, opacity: startOpacity },
@@ -202,8 +203,8 @@ export const opacity = (
   duration: number = 1,
   delay: number = 0
 ) => ({
-  initial: {opacity: startOpacity },
+  initial: { opacity: startOpacity },
   animate: { opacity: animate ? 1 : startOpacity },
-  exit: {opacity: 1},
+  exit: { opacity: 1 },
   transition: { duration: duration, ease: "easeInOut", delay: delay },
 });
