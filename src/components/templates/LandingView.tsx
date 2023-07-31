@@ -38,7 +38,7 @@ const LandingView: FC = () => {
           </div>
         </motion.div>
         <motion.video
-          className="hidden lg:block w-screen h-full bg-secondary absolute inset-0 z-0"
+          className="hidden lg:block w-screen h-full bg-primary absolute inset-0 z-0"
           autoPlay
           muted
           loop
