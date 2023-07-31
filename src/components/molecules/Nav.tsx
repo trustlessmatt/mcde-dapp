@@ -91,12 +91,12 @@ const Nav: FC = () => {
             >
               Merch
             </p>
-            <a
+            {/* <a
               href="https://www.subber.xyz/mickeydegods"
               rel="noreferrer noopener"
             >
               Giveaways
-            </a>
+            </a> */}
           </div>
           <div className="hidden md:flex items-center gap-5">
             <motion.a
