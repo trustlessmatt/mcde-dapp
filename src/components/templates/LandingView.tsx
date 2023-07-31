@@ -8,7 +8,7 @@ const LandingView: FC = () => {
   const isMobile = width < 768;
 
   return (
-    <div className="relative w-full h-[40vh] sm:h-[70vh] lg:h-screen flex flex-col overflow-hidden mt-20 lg:mt-0">
+    <div className="relative w-full h-[50vh] sm:h-[70vh] lg:h-screen flex flex-col overflow-hidden mt-20 lg:mt-0">
       <AnimatePresence mode="wait">
         <motion.div
           className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 bg-primary w-full h-full"
@@ -38,7 +38,7 @@ const LandingView: FC = () => {
           </div>
         </motion.div>
         <motion.video
-          className="hidden lg:block w-screen h-full bg-primary absolute inset-0 z-0"
+          className="hidden lg:block w-screen h-full bg-primary absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-0"
           autoPlay
           muted
           loop
