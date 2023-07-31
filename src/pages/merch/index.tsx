@@ -1,14 +1,28 @@
 import { FC } from "react";
+import Image from "next/image";
 import { Nav } from "@/components";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 const Merch: FC = () => {
+  const [winWidth] = useWindowSize();
+  const isMobile = winWidth < 768;
   return (
-    <div className="w-full min-h-screen flex flex-col items-center">
+    <div className="relative w-full min-h-screen md:h-screen flex flex-col items-center">
       <Nav />
-      <div className="w-full h-full flex flex-col items-center justify-center">
-        <h1 className="text-4xl text-tertiary">Merch</h1>
-        <p className="text-tertiary">Coming soon...</p>
-      </div>
+      <Image
+        src={`/EXCLUSIVE.png`}
+        width={1140}
+        height={420}
+        alt="text"
+        className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 px-10"
+      />
+      <Image
+        src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/mop.png`}
+        width={isMobile ? 250 : 420}
+        height={isMobile ? 250 : 420}
+        alt="mop and bucket"
+        className="absolute bottom-4 right-0"
+      />
     </div>
   );
 };
