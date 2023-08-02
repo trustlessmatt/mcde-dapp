@@ -31,12 +31,11 @@ const MobileMenu: FC<Props> = ({ open, setOpen }) => {
           numCloses > 0 &&
           "transition -translate-y-full ease-in-out duration-500"
         }`}
-      onClick={() => setOpen(!open)}
     >
       <div
         className={`text-tertiary bg-primary
           absolute flex flex-col justify-between min-h-screen w-screen
-          3xl:w-[40%] top-0 right-0 py-4 px-8 shadow-2xl`}
+          3xl:w-[40%] top-0 right-0 py-4 px-6 shadow-2xl`}
       >
         {/* header - laptop/monitor */}
         <div className="flex justify-end">
@@ -92,10 +91,12 @@ const MobileMenu: FC<Props> = ({ open, setOpen }) => {
             <p
               className={`${
                 pathname === "/staking" && "font-primaryBold"
-              } cursor-pointer`}
-              onClick={() => handleRouter("/staking")}
+              } cursor-pointer text-center`}
+              // onClick={() => handleRouter("/staking")}
             >
               Staking
+              <br />
+              <span className="text-lg">(coming soon)</span>
             </p>
             <p
               className={`${
