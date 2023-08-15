@@ -23,7 +23,7 @@ const PageHead: FC<Props> = (props: Props) => {
       <meta name="twitter:description" content={description} />
       <meta
         name="twitter:image"
-        content={`${process.env.NEXT_PUBLIC_CDN_URL}/meta.png`}
+        content={`${process.env.NEXT_PUBLIC_CDN_URL}/images/meta.png`}
       />
       <meta property="twitter:url" content={url} />
       {/* <!-- Open Graph / Facebook --> */}
