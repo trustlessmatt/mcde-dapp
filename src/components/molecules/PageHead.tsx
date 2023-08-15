@@ -33,7 +33,7 @@ const PageHead: FC<Props> = (props: Props) => {
       <meta property="og:description" content={description} />
       <meta
         property="og:image"
-        content={`${process.env.NEXT_PUBLIC_CDN_URL}/meta.png`}
+        content={`${process.env.NEXT_PUBLIC_CDN_URL}/images/meta.png`}
       />
     </Head>
   );
