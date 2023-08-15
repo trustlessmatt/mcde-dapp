@@ -7,7 +7,7 @@ interface Props {
   name: string;
   image1: string;
   image2: string;
-  season: 1 | 2;
+  season: 1 | 2 | 3;
   supply: number;
   rarity: number;
   price?: string;

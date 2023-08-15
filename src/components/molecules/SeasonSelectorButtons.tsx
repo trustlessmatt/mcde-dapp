@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { Dispatch, FC, SetStateAction } from "react";
 
 interface Props {
-  season: 1 | 2;
-  setSeason: Dispatch<SetStateAction<1 | 2>>;
+  season: 1 | 2 | 3;
+  setSeason: Dispatch<SetStateAction<1 | 2 | 3>>;
 }
 
 const SeasonSelectorButtons: FC<Props> = ({ season, setSeason }) => {
@@ -28,7 +28,13 @@ const SeasonSelectorButtons: FC<Props> = ({ season, setSeason }) => {
       >
         Season 2
       </motion.button>
-      <motion.button className="cursor-help w-[100px] h-full flex items-center justify-center">
+      <motion.button
+        {...smallClickAnimation}
+        className={`${
+          season === 3 && "font-primaryBold"
+        } w-[100px] h-full flex items-center justify-center`}
+        onClick={() => setSeason(3)}
+      >
         Season 3
       </motion.button>
     </div>

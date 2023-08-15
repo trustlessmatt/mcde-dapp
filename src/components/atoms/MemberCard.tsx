@@ -5,11 +5,18 @@ import { AnimatePresence, motion } from "framer-motion";
 interface Props {
   image1: string;
   image2: string;
+  image3: string;
   twitterHandle: string;
-  season: 1 | 2;
+  season: 1 | 2 | 3;
 }
 
-const MemberCard: FC<Props> = ({ image1, image2, twitterHandle, season }) => {
+const MemberCard: FC<Props> = ({
+  image1,
+  image2,
+  image3,
+  twitterHandle,
+  season,
+}) => {
   return (
     <div className="flex flex-col items-center justify-center gap-3">
       <div
@@ -51,6 +58,22 @@ const MemberCard: FC<Props> = ({ image1, image2, twitterHandle, season }) => {
                 src={image2}
                 fill
                 alt="Mickey DeGods member season 2"
+                className="hover:scale-105 ease-in-out duration-300 transform object-cover"
+              />
+            </motion.div>
+          )}
+          {season === 3 && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.6 }}
+              key="season3"
+            >
+              <Image
+                src={image3}
+                fill
+                alt="Mickey DeGods member season 3"
                 className="hover:scale-105 ease-in-out duration-300 transform object-cover"
               />
             </motion.div>

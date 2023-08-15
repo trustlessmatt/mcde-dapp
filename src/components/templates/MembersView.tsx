@@ -1,10 +1,14 @@
 import { FC, useEffect, useRef, useState } from "react";
-import { Members, SeasonSelectorToggle } from "@/components";
+import {
+  Members,
+  SeasonSelectorButtons,
+  SeasonSelectorToggle,
+} from "@/components";
 import { slideUp } from "@/constants/framer.config";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 
 const MembersView: FC = () => {
-  const [season, setSeason] = useState<1 | 2>(2);
+  const [season, setSeason] = useState<1 | 2 | 3>(3);
 
   const membersRef = useRef(null);
   const isInView = useInView(membersRef);
@@ -30,7 +34,8 @@ const MembersView: FC = () => {
           <p className="text-center -mt-4 mb-2">
             Holder directory with de[id] coming soon.
           </p>
-          <SeasonSelectorToggle setSeason={setSeason} />
+          {/* <SeasonSelectorToggle setSeason={setSeason} /> */}
+          <SeasonSelectorButtons season={season} setSeason={setSeason} />
           <motion.div {...slideUpAnimation} ref={membersRef}>
             <Members season={season} />
           </motion.div>
