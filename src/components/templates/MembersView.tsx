@@ -32,7 +32,7 @@ const MembersView: FC = () => {
         <motion.div className="flex flex-col items-center justify-center gap-5">
           <h2 className="text-center">Meet the Mickeys</h2>
           <p className="text-center -mt-4 mb-2">
-            Holder directory with de[id] coming soon.
+            Your favorite franchise&apos;s niche microcelebrities
           </p>
           {/* <SeasonSelectorToggle setSeason={setSeason} /> */}
           <SeasonSelectorButtons season={season} setSeason={setSeason} />
