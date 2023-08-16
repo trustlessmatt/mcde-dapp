@@ -92,11 +92,15 @@ const MobileMenu: FC<Props> = ({ open, setOpen }) => {
               className={`${
                 pathname === "/staking" && "font-primaryBold"
               } cursor-pointer text-center`}
-              // onClick={() => handleRouter("/staking")}
+              onClick={() =>
+                window.open(
+                  "https://anybodies.com/c/mickeydegods",
+                  "_blank",
+                  "noopener noreferrer"
+                )
+              }
             >
               Staking
-              <br />
-              <span className="text-lg">(coming soon)</span>
             </p>
             <p
               className={`${
