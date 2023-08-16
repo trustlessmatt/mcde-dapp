@@ -78,8 +78,14 @@ const Nav: FC = () => {
             <p
               className={`${
                 pathname === "/staking" && "font-primaryBold"
-              } cursor-not-allowed`}
-              // onClick={() => handleRouter("/staking")}
+              } cursor-pointer`}
+              onClick={() =>
+                window.open(
+                  "https://anybodies.com/c/mickeydegods",
+                  "_blank",
+                  "noopener noreferrer"
+                )
+              }
             >
               Staking
             </p>
