@@ -20,7 +20,7 @@ const MemberCard: FC<Props> = ({
   return (
     <div className="flex flex-col items-center justify-center gap-3">
       <div
-        className="relative w-[173px] h-[250px] border border-tertiary overflow-hidden cursor-pointer"
+        className="relative w-[180px] h-[250px] border border-tertiary overflow-hidden cursor-pointer"
         onClick={() =>
           window.open(
             `https://twitter.com/${twitterHandle}`,

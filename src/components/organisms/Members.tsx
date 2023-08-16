@@ -65,6 +65,27 @@ const Members: FC<Props> = ({ season }) => {
         twitterHandle="0x_Saddy"
         season={season}
       />
+      <MemberCard
+        image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/anisalti_s1.png`}
+        image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/anisalti_s2.png`}
+        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/not-s3-layered.png`}
+        twitterHandle="Anisalti_"
+        season={season}
+      />
+      <MemberCard
+        image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/cuddlez_s1.png`}
+        image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/cuddlez_s2.png`}
+        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/cuddlez_s3.png`}
+        twitterHandle="Mr_Cuddlez88"
+        season={season}
+      />
+      <MemberCard
+        image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/pixel_s1.png`}
+        image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/pixel_s2.png`}
+        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/pixel_s3.png`}
+        twitterHandle="PixelRainbowNFT"
+        season={season}
+      />
     </motion.div>
   );
 };
