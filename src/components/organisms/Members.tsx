@@ -8,7 +8,7 @@ interface Props {
 
 const Members: FC<Props> = ({ season }) => {
   return (
-    <motion.div className="mt-5 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
+    <motion.div className="mt-5 grid grid-cols-3 xl:grid-cols-4 gap-5">
       <MemberCard
         image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/kindafungible_s1.png`}
         image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/kindafungible_s2.png`}
