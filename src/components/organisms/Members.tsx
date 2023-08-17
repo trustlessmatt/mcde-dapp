@@ -8,7 +8,7 @@ interface Props {
 
 const Members: FC<Props> = ({ season }) => {
   return (
-    <motion.div className="mt-5 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
+    <motion.div className="mt-5 grid grid-cols-3 xl:grid-cols-4 gap-5">
       <MemberCard
         image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/kindafungible_s1.png`}
         image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/kindafungible_s2.png`}
@@ -63,6 +63,34 @@ const Members: FC<Props> = ({ season }) => {
         image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/saddy_s2.png`}
         image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/saddy_s3.png`}
         twitterHandle="0x_Saddy"
+        season={season}
+      />
+      <MemberCard
+        image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/anisalti_s1.png`}
+        image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/anisalti_s2.png`}
+        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/not-s3-layered.png`}
+        twitterHandle="Anisalti_"
+        season={season}
+      />
+      <MemberCard
+        image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/cuddlez_s1.png`}
+        image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/cuddlez_s2.png`}
+        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/cuddlez_s3.png`}
+        twitterHandle="Mr_Cuddlez88"
+        season={season}
+      />
+      <MemberCard
+        image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/pixel_s1.png`}
+        image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/pixel_s2.png`}
+        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/pixel_s3.png`}
+        twitterHandle="PixelRainbowNFT"
+        season={season}
+      />
+      <MemberCard
+        image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/ac_s1.png`}
+        image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/ac_s2.png`}
+        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/ac_s3.png`}
+        twitterHandle="ACdegods"
         season={season}
       />
     </motion.div>
