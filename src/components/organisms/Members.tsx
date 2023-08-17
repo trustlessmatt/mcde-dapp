@@ -68,7 +68,7 @@ const Members: FC<Props> = ({ season }) => {
       <MemberCard
         image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/anisalti_s1.png`}
         image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/anisalti_s2.png`}
-        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/not-s3-layered.png`}
+        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/anisalti_s3.png`}
         twitterHandle="Anisalti_"
         season={season}
       />
