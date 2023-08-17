@@ -86,6 +86,13 @@ const Members: FC<Props> = ({ season }) => {
         twitterHandle="PixelRainbowNFT"
         season={season}
       />
+      <MemberCard
+        image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/ac_s1.png`}
+        image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/ac_s2.png`}
+        image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/members/ac_s3.png`}
+        twitterHandle="ACdegods"
+        season={season}
+      />
     </motion.div>
   );
 };
