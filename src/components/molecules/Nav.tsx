@@ -93,7 +93,13 @@ const Nav: FC = () => {
               className={`${
                 pathname === "/merch" && "font-primaryBold"
               } cursor-pointer`}
-              onClick={() => handleRouter("/merch")}
+              onClick={() =>
+                window.open(
+                  "https://aten.app/mickeymerch",
+                  "_blank",
+                  "noopener noreferrer"
+                )
+              }
             >
               Merch
             </p>

@@ -59,16 +59,22 @@ const Footer: FC = () => {
               className={`${
                 pathname === "/merch" && "font-primaryBold"
               } cursor-pointer`}
-              onClick={() => handleRouter("/merch")}
+              onClick={() =>
+                window.open(
+                  "https://aten.app/mickeymerch",
+                  "_blank",
+                  "noopener noreferrer"
+                )
+              }
             >
               Merch
             </p>
-            <a
+            {/* <a
               href="https://www.subber.xyz/mickeydegods"
               rel="noreferrer noopener"
             >
               Giveaways
-            </a>
+            </a> */}
           </div>
           {/* socials */}
           <div className="flex items-center gap-3 text-primary">
