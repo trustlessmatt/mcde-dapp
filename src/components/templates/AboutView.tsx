@@ -1,12 +1,12 @@
 import { FC, useEffect, useRef, useState } from "react";
-import { SeasonSelectorToggle, TLDR, TraitCard } from "@/components";
+import { SeasonSelectorButtons, TLDR, TraitCard } from "@/components";
 import axios from "axios";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { slideLeft } from "@/constants/framer.config";
 import { useWindowSize } from "@/hooks/useWindowSize";
 
 const AboutView: FC = () => {
-  const [season, setSeason] = useState<1 | 2>(2);
+  const [season, setSeason] = useState<1 | 2 | 3>(3);
   const [visorPrice, setVisorPrice] = useState<number>();
   const [uniformPrice, setUniformPrice] = useState<number>();
 
@@ -44,12 +44,12 @@ const AboutView: FC = () => {
       <div className="w-full h-full md:max-w-[1800px] md:mx-auto flex flex-col lg:flex-row items-center justify-evenly gap-5">
         <TLDR />
         <div className="lg:hidden pt-12">
-          <SeasonSelectorToggle setSeason={setSeason} />
+          <SeasonSelectorButtons season={season} setSeason={setSeason} />
         </div>
         {/* flex-col md:flex-row */}
         <div className="relative">
           <div className="hidden lg:block absolute -top-12 right-0">
-            <SeasonSelectorToggle setSeason={setSeason} />
+            <SeasonSelectorButtons season={season} setSeason={setSeason} />
           </div>
           <AnimatePresence mode="wait">
             <motion.div
@@ -61,6 +61,7 @@ const AboutView: FC = () => {
                 name="Mickey DeGods Visor"
                 image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/visor_s1.png`}
                 image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/visor_s2.png`}
+                image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/visor_s3.png`}
                 season={season}
                 supply={125}
                 rarity={1.32}
@@ -73,6 +74,7 @@ const AboutView: FC = () => {
                 name="Mickey DeGods Polo"
                 image1={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/uniform_s1.png`}
                 image2={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/uniform_s2.png`}
+                image3={`${process.env.NEXT_PUBLIC_CDN_URL}/images/attributes/uniform_s3.png`}
                 season={season}
                 supply={139}
                 rarity={1.47}

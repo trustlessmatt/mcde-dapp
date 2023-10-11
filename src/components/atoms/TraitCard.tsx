@@ -7,6 +7,7 @@ interface Props {
   name: string;
   image1: string;
   image2: string;
+  image3: string;
   season: 1 | 2 | 3;
   supply: number;
   rarity: number;
@@ -18,6 +19,7 @@ const TraitCard: FC<Props> = ({
   name,
   image1,
   image2,
+  image3,
   season,
   supply,
   rarity,
@@ -60,6 +62,22 @@ const TraitCard: FC<Props> = ({
               width={270}
               height={270}
               alt="Mickey DeGods trait season 2"
+            />
+          </motion.div>
+        )}
+        {season === 3 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.6 }}
+            key="season3"
+          >
+            <Image
+              src={image3}
+              width={270}
+              height={270}
+              alt="Mickey DeGods trait season 3"
             />
           </motion.div>
         )}
