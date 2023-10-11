@@ -38,18 +38,39 @@ const LinksView: FC = () => {
           </LinkItem>
           <LinkItem text="Stake Combos for $DUST">
             <Button
-              className="bg-tertiary flex items-center justify-center w-[140px] py-[10px] disabled:cursor-not-allowed"
+              className="bg-tertiary flex items-center justify-center gap-2 w-[140px] py-[10px] disabled:cursor-not-allowed"
               disabled
-              // clickFunc={() => router.push("/staking")}
+              clickFunc={() =>
+                window.open(
+                  "https://anybodies.com/c/mickeydegods",
+                  "_blank",
+                  "noopener noreferrer"
+                )
+              }
             >
+              <Image
+                src="/anybodies.jpg"
+                width={20}
+                height={20}
+                alt="anybodies logo"
+              />
               <p className="text-primary text-lg font-primaryBold">Staking</p>
             </Button>
           </LinkItem>
           <LinkItem text="Wen Mickey merch?">
-            <div className="flex flex-col items-center justify-center w-[140px]">
-              <p className="font-primaryBold text-tertiary text-lg">Webstore</p>
-              <p className="text-tertiary text-base -mt-2">SOON</p>
-            </div>
+            <Button
+              className="bg-tertiary flex items-center justify-center w-[140px] py-[10px] disabled:cursor-not-allowed"
+              disabled
+              clickFunc={() =>
+                window.open(
+                  "https://aten.app/mickeymerch",
+                  "_blank",
+                  "noopener noreferrer"
+                )
+              }
+            >
+              <p className="text-primary text-lg font-primaryBold">Merch NOW</p>
+            </Button>
           </LinkItem>
           <LinkItem text="Follow Mickey DeGods">
             <div className="flex items-center justify-center w-[140px] gap-[10px]">
