@@ -43,7 +43,7 @@ const LandingView: FC = () => {
           muted
           loop
           playsInline
-          key="intro desktop"
+          key="intro desktop 1"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -60,7 +60,7 @@ const LandingView: FC = () => {
           muted
           loop
           playsInline
-          key="intro desktop"
+          key="intro desktop 2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

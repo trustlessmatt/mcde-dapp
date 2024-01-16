@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 
 const TLDR: FC = () => (
@@ -17,6 +18,12 @@ const TLDR: FC = () => (
       <li>👉 Deep $DUST pockets to fund our expansion</li>
       <li>👉 We’re burnin’ it!</li>
     </ul>
+    <p>
+      Are you a Mickey? Access our{" "}
+      <Link href={"/fries"} className="underline text-custom-red">
+        Employee Benefits Program!
+      </Link>
+    </p>
   </div>
 );
 

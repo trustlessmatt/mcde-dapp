@@ -77,6 +77,22 @@ const Nav: FC = () => {
             </p>
             <p
               className={`${
+                pathname === "/fries" && "font-primaryBold"
+              } cursor-pointer`}
+              onClick={() => handleRouter("/fries")}
+            >
+              $FRIES
+            </p>
+            <p
+              className={`${
+                pathname === "/fries" && "font-primaryBold"
+              } cursor-pointer`}
+              onClick={() => handleRouter("/employee")}
+            >
+              Employees Only
+            </p>
+            <p
+              className={`${
                 pathname === "/staking" && "font-primaryBold"
               } cursor-pointer`}
               onClick={() =>
@@ -103,12 +119,6 @@ const Nav: FC = () => {
             >
               Merch
             </p>
-            {/* <a
-              href="https://www.subber.xyz/mickeydegods"
-              rel="noreferrer noopener"
-            >
-              Giveaways
-            </a> */}
           </div>
           <div className="hidden md:flex items-center gap-5">
             <motion.a
