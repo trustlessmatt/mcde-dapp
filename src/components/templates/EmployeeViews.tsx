@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import Image from "next/image";
 import WhosHere from "../molecules/WhosHere";
+import { Volume2 } from "lucide-react";
 
 export enum EmployeeViewsEnum {
   DEID,
@@ -13,7 +14,7 @@ const EmployeeViews: FC = () => {
     EmployeeViewsEnum.DEID
   );
   return (
-    <div className="w-full h-full flex flex-col flex-1 items-center">
+    <div className="w-full max-w-[620px] mx-auto h-full flex flex-col flex-1 items-center">
       {currentView === EmployeeViewsEnum.DEID && (
         <div className="h-full w-full flex flex-col flex-1 gap-5 items-center justify-center">
           <Image
@@ -34,37 +35,43 @@ const EmployeeViews: FC = () => {
         </div>
       )}
       {currentView === EmployeeViewsEnum.CLAIM && (
-        <div className="h-full w-full flex flex-col flex-1 gap-10 items-center justify-center max-w-[480px] mx-auto">
-          <p className="text-3xl font-primaryBold text-white">
-            A holiday bonus from the bosses &lt;3
+        <div
+          className="h-full w-full flex flex-col flex-1 gap-5 items-center 
+          justify-center py-40"
+        >
+          <p className="text-4xl text-center font-primaryBold text-custom-yellow">
+            The grease pits need cleaning.
+            <br />
+            Get on it, Kindafungible.
           </p>
-          <p className="text-white text-center">
-            We write this from the beach in Cancún. Your bags might be down, but
-            we&apos;re up. Here&apos;s a little free $DUST (SPL) claim because
-            Mickey DeGods corporate values its employees.
-          </p>
-          <div className="w-full flex gap-5 items-center">
-            {/* claim option 1 */}
-            <div className="w-full flex flex-col gap-3 items-center">
-              <p className="text-white">$FRIES Claim</p>
-              <button
-                onClick={() => console.log("claim fries")}
-                className="w-full text-black bg-custom-yellow h-[50px]"
-              >
-                Claim free $$ for being a Mickey
-              </button>
-            </div>
-            {/* claim option 2 */}
-            <div className="w-full flex flex-col gap-3 items-center">
-              <p className="text-white">$DUST Claim</p>
-              <button
-                onClick={() => console.log("claim dust")}
-                className="w-full text-black bg-custom-yellow h-[50px]"
-              >
-                Claim free $$ for being a Mickey
-              </button>
+          <div className="flex items-center gap-2">
+            <p className="text-subtext text-center">Play sound</p>
+            <Volume2 size={16} fill="#808080" color="#808080" />
+          </div>
+          <div
+            className="w-full bg-custom-black-2 rounded-[20px] p-5 flex flex-col 
+            gap-2 items-center justify-center"
+          >
+            <p className="text-subtext text-sm">Claim</p>
+            <div className="flex items-center gap-2">
+              <Image
+                src="/icons/dust-sol.png"
+                width={40}
+                height={40}
+                alt="dust"
+              />
+              <p className="text-white font-extrabold text-2xl">3.33</p>
             </div>
           </div>
+          <button
+            className="w-full h-[70px] bg-custom-red border border-custom-yellow 
+            rounded-[20px] flex items-center justify-center text-white"
+          >
+            Get paid
+          </button>
+          <p className="text-white text-center w-full">
+            Resets in 20 hours 33 minutes
+          </p>
           <WhosHere />
         </div>
       )}

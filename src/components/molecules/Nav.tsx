@@ -6,7 +6,11 @@ import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { smallClickAnimation } from "@/constants/framer.config";
 import MobileMenu from "./MobileMenu";
 
-const Nav: FC = () => {
+interface Props {
+  dark?: boolean;
+}
+
+const Nav: FC<Props> = ({ dark = false }) => {
   const { push, pathname } = useRouter();
   const [hidden, setHidden] = useState(false);
   const [open, setOpen] = useState(false);
@@ -46,21 +50,23 @@ const Nav: FC = () => {
   return (
     <>
       <motion.nav
-        className={`z-50 bg-primary h-20 w-full fixed`}
+        className={`z-50 ${
+          dark ? "bg-black text-white" : "bg-primary"
+        } h-20 w-full fixed`}
         variants={variants}
         animate={hidden ? "hidden" : "visible"}
         transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
       >
         <div className="w-[90%] h-full mx-auto flex items-center justify-end md:justify-between gap-3">
           <Image
-            src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/fries_logo_red.png`}
+            src="/fries.png"
             width={40}
             height={40}
             alt="fries logo"
             className="md:hidden absolute left-1/2 -translate-x-1/2"
           />
           <Image
-            src={`${process.env.NEXT_PUBLIC_CDN_URL}/images/fries_logo_red.png`}
+            src="/fries.png"
             width={40}
             height={40}
             alt="fries logo"
@@ -143,7 +149,7 @@ const Nav: FC = () => {
             onClick={() => setOpen(true)}
           >
             <svg
-              className="fill-black"
+              className={`${dark ? "fill-white" : "fill-black"}`}
               width="22"
               height="18"
               viewBox="0 0 22 18"

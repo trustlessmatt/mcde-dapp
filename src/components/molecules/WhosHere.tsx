@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
+import { Twitter } from "..";
 
 const stubbedUsers = [
   {
@@ -32,10 +33,13 @@ const stubbedUsers = [
 const WhosHere: FC = () => {
   return (
     <div className="w-full flex flex-col gap-2">
-      <p className="text-white/50">Who&apos;s here</p>
-      <div className="grid grid-flow-row grid-cols-2 gap-5">
-        {stubbedUsers.map((user) => (
-          <div className="flex gap-1 items-center" key={user.name}>
+      <p className="text-subtext">Role call:</p>
+      {stubbedUsers.map((user) => (
+        <div
+          className="w-full border-b border-dark-border flex gap-1 items-center justify-between py-3"
+          key={user.name}
+        >
+          <div className="flex items-center gap-2">
             <Image
               src={user.image}
               width={40}
@@ -43,13 +47,14 @@ const WhosHere: FC = () => {
               alt="user"
               className="rounded-full overflow-hidden"
             />
-            <div className="flex flex-col">
-              <p className="text-white text-sm">{user.name}</p>
-              <p className="text-white/50 text-sm">{user.job}</p>
-            </div>
+            <p className="text-white text-sm">{user.name}</p>
+            <button>
+              <Twitter width={16} fill="#808080" color="#808080" />
+            </button>
           </div>
-        ))}
-      </div>
+          <p className="text-subtext text-sm">{user.job}</p>
+        </div>
+      ))}
     </div>
   );
 };
